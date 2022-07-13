@@ -13,31 +13,47 @@
            $("#delete").click(function(){$("#div_SignUp").hide(); }); 
            $("#delete").click(function(){$("#div_Sign_In").hide(); }); 
 
-           
-           $("sign_up").click(function(){
-            
-                alert("성공");
+           $("#Sign_Up_Button").click(function(){
+                var name = document.getElementById("name").value;
+                var phone = document.getElementById("phone").value;
+                var id = document.getElementById("ID").value;
+                var pass = document.getElementById("password").value;
+                if (name=="") {
+                    alert("이름을 입력하세요");
+                }else if(phone==""){
+                    alert("핸드폰 번호를 입력하세요");
+                }else if(id==""){
+                    alert("아이디를 입력하세요");
+                }else if(pass == ""){
+                    alert("비밀번호를 입력하세요");
+                }else{
+                    alert("성공");
+                }
+                });
 
-           });
-
-           
-        //    $("sign_in_memebr").click(function(){
-        //         var ID = document.getElementById("SignIn_ID").value;
-        //         var password = document.getElementById("SignIn_PW").value;
-        //         if (ID=="" || ID == null) {
-        //             alert("정보를 입력하세요");
-        //         }
-        //    });
-
-        //    $("delete_memebr").click(function(){
-        //         var ID = document.getElementById("Delete_ID").value;
-        //         var password = document.getElementById("Delete_PW").value;
-        //         if (ID||password==" ") {
-        //             alert("정보를 입력하세요");
-        //         }
-        //    });
-
-
+                $("#sign_in_memebr").click(function(){
+                var id = document.getElementById("SignIn_ID").value;
+                var pass = document.getElementById("SignIn_PW").value;
+                if(id==""){
+                    alert("아이디를 입력하세요");
+                }else if(pass == ""){
+                    alert("비밀번호를 입력하세요");
+                }else{
+                    alert(id,pass);
+                }
+                });
+                
+                $("#delete_memebr").click(function(){
+                var id = document.getElementById("Delete_ID").value;
+                var pass = document.getElementById("Delete_PW").value;
+                if(id==""){
+                    alert("아이디를 입력하세요");
+                }else if(pass == ""){
+                    alert("비밀번호를 입력하세요");
+                }else{
+                    alert(id,pass);
+                }
+                });
 
         //    $("#hide_fade_button").click(function(){$("p").fadeOut("slow");}); 
         //    $("#show_fade_button").click(function(){$("p").fadeIn();}); 
@@ -61,7 +77,7 @@
     
        <hr size="3">
    </form>
-   <button id="sign_up" >회원 등록</button>
+   <button id="Sign_Up_Button" >회원 등록</button>
 </div>
        
    <div id="div_Sign_In" style="display: none;">
