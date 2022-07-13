@@ -1,61 +1,94 @@
 <!DOCTYPE html>
 <head>
     <title>Member Project</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script>
         $(document).ready(function(){
-           $("#slideUp_button").click(function(){$("#div1_p1").slideUp();}); 
-           $("#slideDown_button").click(function(){$("#div1_p1").slideDown();}); 
+           $("#sign_in").click(function(){$("#div_Sign_In").show(); }); 
+           $("#sign_in").click(function(){$("#div_SignUp").hide(); }); 
+           $("#sign_in").click(function(){$("#div_Delete").hide(); }); 
 
-           $("#hide_div1_button").click(function(){$("#div1").hide(); }); 
-           $("#show_div1_button").click(function(){$("#div1").show(); }); 
+           $("#delete").click(function(){$("#div_Delete").show(); }); 
+           $("#delete").click(function(){$("#div_SignUp").hide(); }); 
+           $("#delete").click(function(){$("#div_Sign_In").hide(); }); 
 
-           $("#hide_fade_button").click(function(){$("p").fadeOut("slow");}); 
-           $("#show_fade_button").click(function(){$("p").fadeIn();}); 
+           
+           $("sign_up").click(function(){
+            
+                alert("성공");
+
+           });
+
+           
+        //    $("sign_in_memebr").click(function(){
+        //         var ID = document.getElementById("SignIn_ID").value;
+        //         var password = document.getElementById("SignIn_PW").value;
+        //         if (ID=="" || ID == null) {
+        //             alert("정보를 입력하세요");
+        //         }
+        //    });
+
+        //    $("delete_memebr").click(function(){
+        //         var ID = document.getElementById("Delete_ID").value;
+        //         var password = document.getElementById("Delete_PW").value;
+        //         if (ID||password==" ") {
+        //             alert("정보를 입력하세요");
+        //         }
+        //    });
+
+
+
+        //    $("#hide_fade_button").click(function(){$("p").fadeOut("slow");}); 
+        //    $("#show_fade_button").click(function(){$("p").fadeIn();}); 
         });
     </script>
 </head>
 
 <body>
     <h2>회원 관리 프로젝트</h2>
+    
+<div id="div_SignUp">
+    <form action="#" id ="form_sign_up" method="post">
+        
+        이름 : <input id="name" type="text"></br>
 
-    <div id="div_SignUp">
-        <p>이름</p>
-        <input id="name" type="text">
+        핸드폰번호 : <input id="phone" type="tel" name="phone"></br>
+ 
+       아이디 : <input id="ID" type="text"></br>
 
-        <p>
-           핸드폰번호 
-       </p>
-       <input id="phone" type="tel">
-
-       <p>
-           아이디
-       </p>
-       <input id="ID" type="text">
-
-       <p>암호</p>
-       <input id="password" type="password">
-    </br>
-
-       <button id="sign_up">회원 등록</button>
-   </div>
-
-   <div id="div_Sign_In">
-
-   </div>
-
-       <button id="slideUp_button">slideUp</button>
-
-       <button id="hide_div1_button">Hide</button>
-       <button id="show_div1_button">show</button>
+       암호 : <input id="password" type="password"></br>
+    
+       <hr size="3">
+   </form>
+   <button id="sign_up" >회원 등록</button>
+</div>
        
-       <hr size="1">
+   <div id="div_Sign_In" style="display: none;">
+        <form action="#" method="get">
+            <h3>로그인</h3>
+            아이디 : <input id ="SignIn_ID" type="text"></br>
+            비밀번호 : <input id="SignIn_PW" type="password"></br>
+            <button id="sign_in_memebr">로그인</button>
+       <hr size="3">
 
-       <button id="hide_fade_button">hide_fade</button>
-       <button id="show_fade_button">show_fade</button>
+        </form>
+   </div>
+
+   <div id="div_Delete" style="display: none;">
+    <form action="#" method="get">
+        <h3>회원 탈퇴</h3>
+
+        아이디 : <input id ="Delete_ID" type="text"></br>
+        비밀번호 : <input id="Delete_PW" type="password"></br>
+        <button id="delete_memebr">탈퇴</button>
+        
+        <hr size="3">
+    </form>
+</div>
+
+<button id="sign_in" >로그인</button>
+<button id="delete" >회원 탈퇴</button>
 
 </body>
 </html>
