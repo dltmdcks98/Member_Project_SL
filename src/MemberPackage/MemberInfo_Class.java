@@ -151,4 +151,28 @@ public class MemberInfo_Class implements Serializable {
 
         }
     }
+    void changeSQL(String input){
+        Connection con =null;
+        try{
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/member_db","root","");
+            String str = "DELETE FROM member_t WHERE m_name = ?";
+            PreparedStatement p_stmt;
+            p_stmt = con.prepareStatement(str);
+            p_stmt.setString(1, input);
+            p_stmt.execute();
+
+            System.out.println("success");
+        }catch (SQLException e){
+            System.err.println("con err");
+            e.printStackTrace();
+        }
+
+        try{
+            if(con != null){
+                con.close();
+            }
+        }catch (SQLException e){
+
+        }
+    }
 }

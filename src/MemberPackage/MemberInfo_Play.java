@@ -18,6 +18,7 @@ public class MemberInfo_Play {
         System.out.println("1. info input ");
         System.out.println("2. search info ");
         System.out.println("3. delete info ");
+        System.out.println("4. change info");
         System.out.println("==================================================");
 
         while(true){
@@ -44,6 +45,10 @@ public class MemberInfo_Play {
                 case 3 :
                     System.out.print("Enter Delete name : ");
                     memberInfo.deleteSQL(input.nextLine());
+                    break;
+                case 4 :
+                    System.out.print("Enter Delete name : ");
+
                     break;
                 default:
                     System.err.println("Error");
