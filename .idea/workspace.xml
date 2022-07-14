@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d255a78e-35e2-40df-8751-e579c0af0537" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MemberPackage/MemberInfo_Class.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemberPackage/MemberInfo_Class.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MemberPackage/MemberInfo_Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MemberPackage/MemberInfo_Play.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Member_Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Member_Project.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,20 +19,24 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2BsQMdSVbY1ygMy4zWXr4AS9iAe" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/dltmd/Downloads/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "configurable.group.appearance"
   }
 }]]></component>
   <component name="RunManager">
@@ -62,6 +68,8 @@
       <option name="presentableId" value="Default" />
       <updated>1657692269462</updated>
       <workItem from="1657692271046" duration="2040000" />
+      <workItem from="1657757638103" duration="889000" />
+      <workItem from="1657758767670" duration="2148000" />
     </task>
     <servers />
   </component>
@@ -78,5 +86,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
